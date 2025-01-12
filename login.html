@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Trang đăng nhập và đăng kí tài khoản</title>
+        <meta charset="UTF-8">
+        <style>
+            .blank-username {
+                margin-left: 6px; 
+            }
+            .blank-password {
+                margin-left: 40px; 
+            }
+            .form-name {
+                margin-left: 96px;
+            }
+            .login-form {
+                margin-left: 96px;
+                padding-left: 10px;
+            }
+            .logintitle {
+                margin-left: 96px;
+            }
+            .login-assistant {
+                margin-left: 106px;
+            }
+            .autologin {
+                margin-left: 30px;
+            }
+            .nutbam {
+                max-height: 50%;
+                margin-left: 192px;
+            }
+            .register-div {
+                margin-left: 96px;
+            }
+        </style> 
+    </head>
+    <body>
+        <header>
+            <br><br><br>
+            <h1 class="logintitle">Tham gia để quản lí thời khóa biểu của bạn</h1>
+        </header>
+        <br><br><br><br>
+        <main>
+            <h2 class="form-name"> Đăng nhập</h2>
+            <div class="login">
+                <form action="login.php" method="POST" name="login"
+                autocomplete="off" class="login-form">
+                    <div>
+                        <p style="display: inline;" class="tendangnhap">Tên đăng nhập: </p> 
+                        <input type="text" name="txtUsername" value="" maxlength="50" 
+                        placeholder="Tên đăng nhập hoặc email"
+                        size= 40 class="blank-username">
+                        <br><br>
+                        <p style="display: inline;" class="matkhau">Mật khẩu: </p>
+                        <input type="password" name="txtPassword" size="40" 
+                        class="blank-password" 
+                        placeholder="Mật khẩu thầm kín">
+                    </div>
+                </form>
+                <br>
+                <div class="login-assistant">
+                    <a href="passwordforget.html">Quên mật khẩu</a>
+                    <input type="checkbox" id="check" class="autologin">
+                    <label for="check">Tự động đăng nhập lần sau</label>
+                </div>
+                <br>
+                <div class="loginbutton">
+                    <button class="nutbam">
+                        <h3>Đăng nhập</h3>
+                    </button>                        
+                </div>
+                <br><br>
+                <div class="register-div">
+                    <h3 class="register-intro">
+                        <p style="display: inline;">Bạn mới à?</p>
+                        <a href="register.html">Đăng kí ngay</a> <p style="display: inline;"> tại đây</p> 
+                    </h3>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
